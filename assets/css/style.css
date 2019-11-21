@@ -1,0 +1,144 @@
+/* ====== Universal Page Style Rules ======= */
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: wheat;
+    }
+header {
+    width: 100%;
+    background-color: white;
+}
+
+.container {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#name {
+    background-color: teal;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+    height: 100%;
+    text-align: center;
+    max-width: 200px;
+    display: inline-block;
+    margin-right: 22%;
+    padding: 20px;
+}
+
+nav {display: inline-block; float: right;}
+
+nav ul li {display: inline-block;}
+nav ul li a {
+    padding: 20px;
+    text-align: center;
+    color: gray;
+    text-decoration: none;
+}
+
+nav ul li a:hover {opacity: .7;}
+
+#content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 300px;
+    background-color: white;
+    padding: 30px;
+    overflow: auto;
+}
+
+#title {
+    color: teal;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+h2 {
+    padding: 0;
+    margin: 10px;
+}
+
+#title, h2 {font-family: 'Georgia', Times, 'Times New Roman', serif;}
+
+#image {
+    float: left;
+    margin: 0 15px;
+}
+
+#content p {
+    color: #333;
+    line-height: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: darkslategray;
+    border-top: 5px solid lightblue;
+    color: #eee;
+    text-align: center;
+    padding: 1em;
+}
+
+/* ======= Contact Page Style Rule ========= */
+
+input[type=text] {
+    width: 100%;
+    padding: 1em;
+    max-width: 875px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 1em;
+    max-width: 875px;
+    margin-bottom: 20px;
+}
+
+input[type=button], input[type=submit] {
+    background-color: teal;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 200px;
+    padding: 15px 40px;
+}
+
+/* ======= Portfolio Page Style Rule ========= */
+.portfolio-contain {
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: auto;
+}
+
+.portfolio-block {
+    width: 300px; 
+    height: 200px; 
+    background-color: gray;
+    float: left;
+    margin-right: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-block img {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.portfolio-block-title {
+    position: absolute;
+    background-color: teal;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    top: 65%;
+}
