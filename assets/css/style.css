@@ -10,12 +10,6 @@ header {
     background-color: white;
 }
 
-.container {
-    width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 #name {
     background-color: teal;
     color: #fff;
@@ -23,15 +17,11 @@ header {
     font-size: 1.5em;
     height: 100%;
     text-align: center;
-    max-width: 200px;
-    display: inline-block;
-    margin-right: 22%;
     padding: 20px;
 }
 
-nav {display: inline-block; float: right;}
-
-nav ul li {display: inline-block;}
+ul {margin-bottom: 0;}
+nav ul li {display: inline-block; padding: 15px;}
 nav ul li a {
     padding: 20px;
     text-align: center;
@@ -42,7 +32,10 @@ nav ul li a {
 nav ul li a:hover {opacity: .7;}
 
 #content {
+    max-width: 960px;
     margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 20px;
     min-height: 300px;
     background-color: white;
@@ -83,7 +76,7 @@ footer {
     padding: 1em;
 }
 
-/* ======= Contact Page Style Rule ========= */
+/* ======= Contact Page Style Rules ========= */
 
 input[type=text] {
     width: 100%;
@@ -108,9 +101,8 @@ input[type=button], input[type=submit] {
     padding: 15px 40px;
 }
 
-/* ======= Portfolio Page Style Rule ========= */
+/* ======= Portfolio Page Style Rules ========= */
 .portfolio-contain {
-    width: 100%;
     margin-bottom: 30px;
     overflow: auto;
 }
@@ -119,7 +111,6 @@ input[type=button], input[type=submit] {
     width: 300px; 
     height: 200px; 
     background-color: gray;
-    float: left;
     margin-right: 30px;
     position: relative;
     overflow: hidden;
@@ -141,4 +132,44 @@ input[type=button], input[type=submit] {
     padding: 10px;
     width: 100%;
     top: 65%;
+    left: 0%;
+}
+
+/* ======= Mobile Responsive Style Rules ========= */
+
+@media (max-width: 640px) {
+    #name {
+        width: 100%;
+        margin-right: 22%;
+        padding: 20px;
+    }
+    nav {text-align: center;}
+    header .container {
+        max-width: 100%!important;
+        margin: 0!important;
+        padding: 0!important;
+    }
+    .portfolio-block {margin-bottom: 30px;}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    nav {text-align: center;}
+    header .container {
+        max-width: 100%!important;
+        margin: 0!important;
+        padding: 0!important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 979px) {
+
+}
+
+@media (min-width: 980px) {
+    #name {
+        max-width: 200px;
+        display: inline-block;
+        margin-right: 22%;
+    }
+
+    nav {display: inline-block; float: right;}
 }
