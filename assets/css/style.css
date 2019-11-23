@@ -103,7 +103,6 @@ input[type=button], input[type=submit] {
 
 /* ======= Portfolio Page Style Rules ========= */
 .portfolio-contain {
-    margin-bottom: 30px;
     overflow: auto;
 }
 
@@ -150,6 +149,7 @@ input[type=button], input[type=submit] {
         padding: 0!important;
     }
     .portfolio-block {margin-bottom: 30px;}
+}
 
 @media (min-width: 641px) and (max-width: 768px) {
     nav {text-align: center;}
@@ -158,10 +158,11 @@ input[type=button], input[type=submit] {
         margin: 0!important;
         padding: 0!important;
     }
+    .portfolio-block {margin-bottom: 30px;}
 }
 
 @media (min-width: 769px) and (max-width: 979px) {
-
+    .portfolio-contain {margin-bottom: 30px;}
 }
 
 @media (min-width: 980px) {
@@ -170,6 +171,6 @@ input[type=button], input[type=submit] {
         display: inline-block;
         margin-right: 22%;
     }
-
-    nav {display: inline-block; float: right;}
+    nav {float: right;}
+    .portfolio-contain {margin-bottom: 30px;}
 }
